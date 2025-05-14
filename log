@@ -24,3 +24,25 @@ Wed, May 14, 2025  8:55:46 AM:
  tests:  1|4
 total_score: 10/70
 a5ce086
+Wed, May 14, 2025  9:19:39 AM: 
+ sudoku.c | 44 ++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 44 insertions(+)
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'is_valid':
+sudoku.c:84:18: error: 'nodo' undeclared (first use in this function)
+     printf("%d ",nodo->sudo[i][j]);
+                  ^~~~
+sudoku.c:84:18: note: each undeclared identifier is reported only once for each function it appears in
+sudoku.c:83:9: error: variable 'j' set but not used [-Werror=unused-but-set-variable]
+     int j=3*(k%3) + (p%3) ;
+         ^
+sudoku.c:82:9: error: variable 'i' set but not used [-Werror=unused-but-set-variable]
+     int i=3*(k/3) + (p/3) ;
+         ^
+sudoku.c: In function 'get_adj_nodes':
+sudoku.c:93:7: error: implicit declaration of function 'is_final' [-Werror=implicit-function-declaration]
+   if (is_final(n) == 0)
+       ^~~~~~~~
+cc1.exe: all warnings being treated as errors
+12bb22d
