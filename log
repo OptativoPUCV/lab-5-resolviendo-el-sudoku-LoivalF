@@ -18,3 +18,9 @@ sudoku.c:59:21: error: invalid initializer
    int sudok[9][9] = n->sudo;
                      ^
 e6fd1e8
+Wed, May 14, 2025  8:55:46 AM: 
+ sudoku.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+ tests:  1|4
+total_score: 10/70
+a5ce086
