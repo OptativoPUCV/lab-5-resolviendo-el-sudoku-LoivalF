@@ -123,21 +123,19 @@ Node* DFS(Node* initial, int* cont) {
     if (is_empty(stack)) {
       return NULL;
     }
-    
+
     Node *n = top(stack);
     pop(stack);
 
     if (is_final(n)) return n;
 
     List *adj = get_adj_nodes(n);
+
+    while (!is_empty(adj)) {
     Node *n1 = first(adj);
-
-    while (adj != NULL) {
-      push(stack, n1);
-      popFront(adj);
-      n1 = first(adj);
+    if (n1 != NULL) push(stack, n1);
+    popFront(adj);
     }
-
     free(n);
     (*cont)++;
   }
