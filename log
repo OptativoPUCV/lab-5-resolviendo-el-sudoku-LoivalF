@@ -87,3 +87,18 @@ Sat, May 17, 2025  6:00:28 PM:
  tests:  7|1
 total_score: 55/70
 00ec2cc
+Sat, May 17, 2025  6:14:33 PM: 
+ sudoku.c | 16 +++++++++++++++-
+ 1 file changed, 15 insertions(+), 1 deletion(-)
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'DFS':
+sudoku.c:131:11: error: passing argument 1 of 'clean' from incompatible pointer type [-Werror=incompatible-pointer-types]
+     clean(n);
+           ^
+In file included from test.c:4:0:
+list.h:13:6: note: expected 'List * {aka struct List *}' but argument is of type 'Node * {aka struct <anonymous> *}'
+ void clean(List* list);
+      ^~~~~
+cc1.exe: all warnings being treated as errors
+7bb89ea
