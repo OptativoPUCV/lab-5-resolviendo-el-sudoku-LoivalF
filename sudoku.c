@@ -126,9 +126,10 @@ Node* DFS(Node* initial, int* cont) {
     while (adj != NULL) {
       Node *n1 = first(adj);
       push(stack, n1);
-      n1 = next(adj);
+      popFront(adj);
     }
     clean(adj);
+    free(n);
     (*cont)++;
   }
   return NULL;
