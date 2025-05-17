@@ -128,7 +128,7 @@ Node* DFS(Node* initial, int* cont) {
       push(stack, n1);
       n1 = next(adj);
     }
-    clean(n);
+    clean(adj);
     (*cont)++;
   }
   return NULL;
