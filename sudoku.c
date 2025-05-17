@@ -129,7 +129,6 @@ Node* DFS(Node* initial, int* cont) {
       push(stack, n1);
       popFront(adj);
     }
-    clean(adj);
     free(n);
     (*cont)++;
   }
