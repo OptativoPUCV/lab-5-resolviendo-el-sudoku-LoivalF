@@ -58,3 +58,14 @@ Wed, May 14, 2025  9:26:15 AM:
  tests:  4|3
 total_score: 30/70
 8599f37
+Sat, May 17, 2025  5:51:11 PM: 
+ sudoku.c | 15 ++++++++++++---
+ 1 file changed, 12 insertions(+), 3 deletions(-)
+Compilation failed
+In file included from test.c:5:0:
+sudoku.c: In function 'get_adj_nodes':
+sudoku.c:88:24: error: left-hand operand of comma expression has no effect [-Werror=unused-value]
+     for (int j = 0 ; j , 9 ; j++) {
+                        ^
+cc1.exe: all warnings being treated as errors
+a2cca63
